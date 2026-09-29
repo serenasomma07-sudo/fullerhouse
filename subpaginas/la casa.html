@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fuller House | La casa</title>
+
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+
+        <div class="marca">
+            <a href="../index.html">FULLER HOUSE</a>
+        </div>
+
+        <nav class="nav">
+            <a href="../index.html">Home</a>
+            <a href="laserie.html">La serie</a>
+            <a href="personajes.html">Personajes</a>
+            <a href="temporadas.html">Temporadas</a>
+            <a href="la casa.html" class="activo">La casa</a>
+
+        </nav>
+
+        <div class="header-derecha">
+
+            <div class="buscador">
+                🔍 Buscar...
+            </div>
+
+            <div class="inicio" onclick="location.href='./registrate.html';">
+    👤 Inicio de sesión
+</div>
+
+    </header>
+
+
+    <!-- PRESENTACIÓN -->
+    <section class="casa-presentacion">
+
+        <div class="casa-presentacion-texto">
+
+            <h1>LA CASA EN EL TIEMPO</h1>
+
+            <p>
+                La casa Tanner, el lugar principal tanto
+                en Full House como en Fuller House.
+            </p>
+
+        </div>
+
+
+        <div class="casa-presentacion-imagen">
+
+            <img src="../imagenes/casatiempo.png"
+                 alt="Casa Tanner">
+
+        </div>
+
+    </section>
+
+
+    <!-- RECORRIDO POR LA CASA -->
+    <section class="recorrido-casa">
+
+        <div class="recorrido-titulo">
+
+            <h2>UN RECORRIDO POR LA CASA</h2>
+
+            <p>
+                Conocé cada parte de la casa Tanner.
+            </p>
+
+        </div>
+
+
+        <div class="recorrido-contenido">
+
+
+            <!-- BOTONES -->
+            <div class="botones-casa">
+
+                <button class="boton-casa activo-casa"
+                        data-espacio="living">
+                    LIVING
+                </button>
+
+
+                <button class="boton-casa"
+                        data-espacio="cocina">
+                    COCINA
+                </button>
+
+
+                <button class="boton-casa"
+                        data-espacio="habitaciones">
+                    HABITACIONES
+                </button>
+
+
+                <button class="boton-casa"
+                        data-espacio="patio">
+                    PATIO
+                </button>
+
+            </div>
+
+
+            <!-- FOTO -->
+            <div class="carrusel-casa">
+
+                <button class="flecha-casa flecha-izquierda"
+                        id="flechaAnterior">
+                    ←
+                </button>
+
+
+                <div class="imagen-casa-contenedor">
+
+                    <img id="imagenCasa"
+                         src="../imagenes/living1.png"
+                         alt="Interior de la casa Tanner">
+
+                </div>
+
+
+                <button class="flecha-casa flecha-derecha"
+                        id="flechaSiguiente">
+                    →
+                </button>
+
+            </div>
+
+
+            <!-- MOMENTOS DESTACADOS -->
+            <div class="momentos-casa">
+
+                <h2>
+                    MOMENTOS<br>
+                    DESTACADOS
+                </h2>
+
+
+                <div id="textoMomentos">
+
+                    <h3>Reuniones familiares</h3>
+
+                    <p>
+                        Muchos de los momentos importantes terminan
+                        con todos juntos en este espacio.
+                    </p>
+
+
+                    <h3>Una casa llena otra vez</h3>
+
+                    <p>
+                        Con la llegada de Stephanie, Kimmy y sus hijos,
+                        el living vuelve a convertirse en el centro
+                        de una familia numerosa.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- VIAJEMOS EN EL TIEMPO -->
+    <section class="viajemos-tiempo">
+
+        <h2>VIAJEMOS EN EL TIEMPO</h2>
+
+        <p>Full House</p>
+
+
+        <div class="tiempo-grilla">
+
+
+            <!-- TEMPORADA 1 -->
+            <div class="tiempo-item">
+
+                <img src="../imagenes/fullhouse1.png"
+                     alt="Full House temporada 1"
+                     class="fullhouse-1">
+
+                <h3>Temporada 1</h3>
+
+            </div>
+
+
+            <!-- TEMPORADA 2 -->
+            <div class="tiempo-item">
+
+                <img src="../imagenes/fullhouse2.png"
+                     alt="Full House temporada 2"
+                     class="fullhouse-2">
+
+                <h3>Temporada 2</h3>
+
+            </div>
+
+
+            <!-- TEMPORADA 3 -->
+            <div class="tiempo-item">
+
+                <img src="../imagenes/fullhouse3.png"
+                     alt="Full House temporada 3"
+                     class="fullhouse-3">
+
+                <h3>Temporada 3</h3>
+
+            </div>
+
+
+            <!-- TEMPORADA 4 -->
+            <div class="tiempo-item">
+
+                <img src="../imagenes/fullhouse4.png"
+                     alt="Full House temporada 4"
+                     class="fullhouse-4">
+
+                <h3>Temporada 4</h3>
+
+            </div>
+
+
+            <!-- TEMPORADA 5 -->
+            <div class="tiempo-item">
+
+                <img src="../imagenes/fullhouse5.png"
+                     alt="Full House temporada 5"
+                     class="fullhouse-5">
+
+                <h3>Temporada 5</h3>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ACCESOS -->
+    <section class="accesos casa-accesos">
+
+        <a href="personajes.html" class="acceso">
+
+            <img src="../imagenes/familia.png"
+                 alt="Familia">
+
+            <h3>CONOCÉ A LA FAMILIA</h3>
+
+        </a>
+
+
+        <a href="temporadas.html" class="acceso">
+
+            <img src="../imagenes/netflix.png"
+                 alt="Temporadas">
+
+            <h3>ELEGÍ UNA TEMPORADA</h3>
+
+        </a>
+
+
+        <a href="la casa.html" class="acceso">
+
+            <img src="../imagenes/living.png"
+                 alt="La casa">
+
+            <h3>ENTRÁ A LA CASA</h3>
+
+        </a>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-principal">
+
+            <div class="footer-texto">
+
+                <p class="footer-pregunta">
+                    ¿LISTO PARA
+                </p>
+
+                <h2>VOLVER A CASA?</h2>
+
+                <p class="footer-frase">
+                    La misma casa, nuevas historias.
+                </p>
+
+            </div>
+
+
+            <img src="../imagenes/puentefooter.png"
+                 alt="Puente de San Francisco"
+                 class="puente-footer">
+
+
+            <img src="../imagenes/casafooter.png"
+                 alt="Casa de Fuller House"
+                 class="casa-footer">
+
+        </div>
+
+
+        <div class="footer-abajo">
+
+            <a href="../index.html"
+               class="footer-logo">
+
+                <img src="../imagenes/fullerhouselogo.png"
+                     alt="Fuller House">
+
+            </a>
+
+
+            <div class="footer-redes">
+
+                <a href="https://youtube.com/@fullerhouseyt?si=-j3ev5RyNdwHm0z2"
+                   target="_blank">
+                    YOUTUBE
+                </a>
+
+                <span></span>
+
+                <a href="https://www.netflix.com/es/title/80051137"
+                   target="_blank">
+                    NETFLIX
+                </a>
+
+                <span></span>
+
+                <a href="https://www.tiktok.com/@fullerhouse.tvshow"
+                   target="_blank">
+                    TIKTOK
+                </a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="../java s/script.js"></script>
+
+</body>
+
+</html>

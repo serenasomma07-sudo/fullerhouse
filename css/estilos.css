@@ -1,0 +1,3406 @@
+/* =========================================
+   GENERAL
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+    background-color: #fbfce6;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.header {
+    width: 100%;
+    height: 45px;
+
+    background-color: #eee9ce;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 27px;
+}
+
+.marca {
+    width: 250px;
+
+    font-size: 15px;
+    font-weight: 900;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+
+    gap: 29px;
+}
+
+.nav a {
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.nav .activo {
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.header-derecha {
+    margin-left: auto;
+
+    display: flex;
+    align-items: center;
+
+    gap: 17px;
+}
+
+.buscador {
+    width: 130px;
+    height: 31px;
+
+    background-color: #ffffff;
+
+    display: flex;
+    align-items: center;
+
+    gap: 6px;
+
+    padding: 0 8px;
+
+    font-size: 14px;
+}
+
+.inicio {
+    height: 30px;
+
+    background-color: #d1cfc5;
+
+    display: flex;
+    align-items: center;
+
+    gap: 4px;
+
+    padding: 0 8px;
+
+    font-size: 14px;
+
+    white-space: nowrap;
+
+    cursor: pointer;
+}
+
+
+/* =========================================
+   PRIMER BLOQUE
+========================================= */
+
+.portada {
+    width: 100%;
+    min-height: 500px;
+
+    background-image: url("../imagenes/puente.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    padding: 50px 70px;
+}
+
+.portada-texto {
+    width: 560px;
+
+    padding: 0;
+
+    background: transparent;
+
+    text-align: center;
+}
+
+.bienvenidos {
+    font-size: 27px;
+    font-weight: 400;
+
+    color: #000000;
+
+    margin-bottom: 12px;
+}
+
+.logo-fuller {
+    display: block;
+
+    width: 430px;
+    max-width: 100%;
+    height: auto;
+
+    margin: 0 auto 24px auto;
+}
+
+
+/* SOLO ESTA PARTE TIENE CAJA */
+
+.bajada {
+    display: inline-block;
+
+    font-size: 22px;
+    line-height: 1.25;
+
+    color: #111111;
+
+    background-color: rgba(255, 255, 255, 0.78);
+
+    padding: 12px 20px;
+
+    border-radius: 14px;
+
+    margin-bottom: 25px;
+}
+
+.boton {
+    display: inline-block;
+
+    background-color: #c31306;
+    color: #ffffff;
+
+    padding: 13px 20px;
+
+    font-size: 21px;
+    font-weight: 700;
+}
+
+
+/* =========================================
+   SEGUNDO BLOQUE
+========================================= */
+
+.historia {
+    width: 100%;
+    min-height: 430px;
+
+    background-color: #fbfce6;
+
+    display: flex;
+    align-items: center;
+
+    padding: 40px 55px;
+
+    gap: 65px;
+}
+
+.historia-foto {
+    width: 52%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.marco-familia {
+    background-color: #ffbf08;
+
+    border-radius: 30px;
+
+    padding: 15px 15px 0 0;
+}
+
+.marco-familia img {
+    display: block;
+
+    width: 460px;
+    height: 305px;
+
+    object-fit: cover;
+
+    border-radius: 27px;
+}
+
+.historia-contenido {
+    width: 48%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.logo-full-house {
+    display: block;
+
+    width: 340px;
+    max-width: 100%;
+    height: auto;
+
+    margin-bottom: 20px;
+}
+
+.historia-contenido h2 {
+    font-size: 32px;
+    line-height: 1.05;
+
+    font-weight: 800;
+
+    margin-bottom: 19px;
+}
+
+.historia-contenido p {
+    max-width: 410px;
+
+    font-size: 23px;
+    line-height: 1.15;
+
+    margin-bottom: 24px;
+}
+
+.fecha {
+    background-color: #ffbe04;
+
+    min-width: 180px;
+
+    padding: 8px 25px;
+
+    border-radius: 30px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    line-height: 1;
+}
+
+.fecha strong {
+    font-size: 20px;
+
+    margin-bottom: 5px;
+}
+
+.fecha span {
+    font-size: 21px;
+}
+
+
+/* =========================================
+   DESCUBRÍ MÁS
+========================================= */
+
+.descubri {
+    width: 100%;
+
+    background-color: #ede8cc;
+
+    padding: 39px 39px 27px;
+}
+
+.descubri > h2 {
+    font-size: 33px;
+    line-height: 1.07;
+
+    font-weight: 800;
+
+    margin-bottom: 43px;
+}
+
+
+/* =========================================
+   TARJETAS
+========================================= */
+
+.cards {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 39px;
+}
+
+.card {
+    height: 186px;
+
+    background-color: #ffffeb;
+
+    position: relative;
+
+    padding: 10px 11px;
+}
+
+.card h3 {
+    font-size: 23px;
+    font-weight: 800;
+
+    margin-bottom: 7px;
+}
+
+.card p {
+    font-size: 16px;
+    line-height: 1.13;
+}
+
+.netflix-icono {
+    height: 62px;
+
+    font-family: Arial Black, Arial, sans-serif;
+
+    font-size: 52px;
+    font-weight: 900;
+
+    color: #d61212;
+}
+
+.personas-icono {
+    height: 62px;
+
+    display: flex;
+    align-items: center;
+
+    color: #349197;
+
+    font-size: 30px;
+    font-weight: 900;
+
+    letter-spacing: -5px;
+}
+
+.emoji {
+    height: 62px;
+
+    display: flex;
+    align-items: center;
+
+    font-size: 44px;
+}
+
+
+/* FLECHAS CLICKEABLES */
+
+.flecha {
+    position: absolute;
+
+    right: 10px;
+    bottom: 8px;
+
+    font-size: 28px;
+
+    cursor: pointer;
+}
+
+
+/* =========================================
+   TRES IMÁGENES INFERIORES
+========================================= */
+
+.accesos {
+    width: 100%;
+
+    background-color: #fbfce6;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 81px;
+
+    padding: 30px 39px 25px;
+}
+
+.acceso {
+    display: block;
+
+    cursor: pointer;
+}
+
+.acceso img {
+    display: block;
+
+    width: 100%;
+    height: 149px;
+
+    object-fit: cover;
+    object-position: center 30%;
+}
+
+.acceso h3 {
+    font-size: 22px;
+    font-weight: 800;
+
+    margin-top: 7px;
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.footer {
+    width: 100%;
+}
+
+
+/* PARTE PRINCIPAL */
+
+.footer-principal {
+    width: 100%;
+    height: 390px;
+
+    background-color: #eee9ce;
+
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* TEXTO */
+
+.footer-texto {
+    position: absolute;
+
+    left: 65px;
+    top: 85px;
+
+    z-index: 5;
+}
+
+.footer-pregunta {
+    color: #17365d;
+
+    font-size: 27px;
+    font-weight: 700;
+
+    margin: 0 0 8px 0;
+}
+
+.footer-texto h2 {
+    color: #c31306;
+
+    font-size: 52px;
+    font-weight: 800;
+
+    margin: 0;
+}
+
+.footer-frase {
+    color: #17365d;
+
+    font-size: 20px;
+
+    margin-top: 12px;
+}
+
+
+/* PUENTE */
+
+.puente-footer {
+    position: absolute;
+
+    width: 620px;
+    height: auto;
+
+    right: 270px;
+    bottom: 0;
+
+    z-index: 1;
+}
+
+
+/* CASA */
+
+.casa-footer {
+    position: absolute;
+
+    width: 460px;
+    height: auto;
+
+    right: -20px;
+    bottom: -5px;
+
+    z-index: 2;
+}
+
+
+/* PARTE AZUL */
+
+.footer-abajo {
+    width: 100%;
+    height: 105px;
+
+    background-color: #17365d;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 55px;
+
+    position: relative;
+    z-index: 10;
+}
+
+
+/* LOGO */
+
+.footer-logo {
+    display: block;
+}
+
+.footer-logo img {
+    display: block;
+
+    width: 190px;
+    height: auto;
+
+    filter:
+        brightness(0)
+        saturate(100%)
+        invert(85%)
+        sepia(96%)
+        saturate(1500%)
+        hue-rotate(350deg)
+        brightness(105%);
+}
+
+
+/* REDES */
+
+.footer-redes {
+    display: flex;
+    align-items: center;
+
+    gap: 25px;
+}
+
+.footer-redes a {
+    color: #ffffff;
+
+    font-size: 14px;
+    letter-spacing: 2px;
+
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.footer-redes a:hover {
+    color: #ffbe04;
+}
+
+
+/* LÍNEAS */
+
+.footer-redes span {
+    display: block;
+
+    width: 1px;
+    height: 30px;
+
+    background-color: #ffffff;
+
+    opacity: 0.7;
+}
+
+/* =========================================
+   PAGINA LA SERIE
+========================================= */
+
+
+/* =========================================
+   PRIMER BLOQUE
+========================================= */
+
+.serie-inicio {
+    width: 100%;
+    min-height: 285px;
+
+    background-color: #fbfce6;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 35px 40px;
+
+    gap: 55px;
+}
+
+
+.serie-inicio-texto {
+    width: 43%;
+}
+
+
+.serie-inicio-texto h1 {
+    font-size: 32px;
+    line-height: 1.05;
+    font-weight: 800;
+
+    margin-bottom: 15px;
+}
+
+
+.serie-inicio-texto p {
+    max-width: 520px;
+
+    font-size: 17px;
+    line-height: 1.25;
+
+    margin-bottom: 18px;
+}
+
+
+/* BOTON TRAILER */
+
+.boton-trailer {
+    display: inline-block;
+
+    background-color: #c31306;
+    color: #ffffff;
+
+    padding: 11px 25px;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    text-decoration: none;
+}
+
+
+.boton-trailer:hover {
+    background-color: #17365d;
+}
+
+
+/* FOTO GRANDE DE ARRIBA */
+
+.serie-header-imagen {
+    width: 53%;
+    height: 215px;
+
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center 35%;
+}
+
+
+.serie-header-imagen img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+    transform: scale(1.05);
+    transform-origin: center 62%;
+}
+
+
+
+/* =========================================
+   LINEA DEL TIEMPO
+========================================= */
+
+.timeline-serie {
+    width: 100%;
+
+    background-color: #eee9ce;
+
+    padding: 30px 45px 45px;
+
+    text-align: center;
+}
+
+
+.timeline-serie > h2 {
+    font-size: 30px;
+    font-weight: 800;
+
+    margin-bottom: 2px;
+}
+
+
+.timeline-subtitulo {
+    font-size: 16px;
+
+    margin-bottom: 18px;
+}
+
+
+/* CUATRO COLUMNAS */
+
+.timeline-contenedor {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 70px;
+
+    position: relative;
+
+    padding-top: 28px;
+}
+
+
+/* LINEA ROJA */
+
+.timeline-contenedor::before {
+    content: "";
+
+    position: absolute;
+
+    top: 8px;
+    left: 7%;
+    right: 7%;
+
+    height: 2px;
+
+    background-color: #c31306;
+}
+
+
+/* CADA MOMENTO */
+
+.timeline-item {
+    position: relative;
+
+    text-align: left;
+}
+
+
+/* PUNTOS ROJOS */
+
+.timeline-punto {
+    position: absolute;
+
+    width: 16px;
+    height: 16px;
+
+    background-color: #c31306;
+
+    border-radius: 50%;
+
+    top: -28px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    z-index: 2;
+}
+
+
+/* CONTENEDOR DE FOTO */
+
+.timeline-foto {
+    width: 100%;
+    height: 145px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    margin-bottom: 12px;
+
+    background-color: transparent;
+}
+
+
+/* SIN CUADRADO GRIS */
+
+.timeline-foto img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+}
+
+
+.timeline-item h3 {
+    font-size: 16px;
+    font-weight: 800;
+
+    text-align: center;
+
+    margin-bottom: 2px;
+}
+
+
+.timeline-item h4 {
+    font-size: 16px;
+
+    text-align: center;
+
+    margin-bottom: 12px;
+}
+
+
+.timeline-item p {
+    font-size: 14px;
+    line-height: 1.25;
+}
+
+
+
+/* =========================================
+   DIRECTOR Y CREADOR
+========================================= */
+
+.equipo-serie {
+    width: 100%;
+
+    background-color: #fbfce6;
+
+    display: grid;
+
+    grid-template-columns: 24% 38% 38%;
+
+    padding: 35px 40px;
+
+    gap: 25px;
+}
+
+
+.equipo-presentacion h2 {
+    font-size: 28px;
+    line-height: 1.05;
+
+    margin-bottom: 17px;
+}
+
+
+.equipo-presentacion p {
+    font-size: 15px;
+    line-height: 1.3;
+
+    max-width: 190px;
+}
+
+
+.equipo-persona {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+
+/* FOTO */
+
+.equipo-foto {
+    width: 145px;
+    height: 145px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    background-color: transparent;
+}
+
+
+/* SIN CUADRADO GRIS */
+
+.equipo-foto img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+}
+
+
+.equipo-datos h3 {
+    font-size: 16px;
+
+    margin-bottom: 2px;
+}
+
+
+.equipo-datos span {
+    display: block;
+
+    font-size: 15px;
+
+    margin-bottom: 12px;
+}
+
+
+.equipo-datos p {
+    font-size: 14px;
+    line-height: 1.25;
+}
+
+
+
+/* =========================================
+   SABIAS QUE
+========================================= */
+
+.datos-serie {
+    width: 100%;
+
+    background-color: #eee9ce;
+
+    padding: 42px 40px 60px;
+}
+
+
+.datos-serie > h2 {
+    font-size: 30px;
+
+    margin-bottom: 38px;
+}
+
+
+.datos-contenedor {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 75px;
+}
+
+
+/* TARJETAS */
+
+.dato-card {
+    background-color: #fbfce6;
+
+    padding: 15px;
+
+    min-height: 315px;
+}
+
+
+/* FOTO */
+
+.dato-foto {
+    width: 100%;
+    height: 150px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    margin-bottom: 15px;
+
+    background-color: transparent;
+}
+
+
+/* SIN CUADRADO GRIS */
+
+.dato-foto img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+}
+
+
+.dato-card p {
+    font-size: 14px;
+    line-height: 1.25;
+}
+
+
+
+/* =========================================
+   VOLVE A VERLA
+========================================= */
+
+.volver-serie {
+    width: 100%;
+
+    background-color: #eee9ce;
+
+    display: flex;
+    align-items: center;
+
+    padding: 40px;
+
+    gap: 55px;
+}
+
+
+/* FOTO MAS ANCHA */
+
+.volver-foto {
+    width: 57%;
+    height: 235px;
+
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.volver-foto img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.volver-contenido {
+    width: 38%;
+}
+
+
+.volver-contenido p {
+    font-size: 16px;
+    line-height: 1.3;
+
+    margin-bottom: 17px;
+}
+
+
+/* BOTON ROJO */
+
+.boton-volver {
+    display: inline-block;
+
+    background-color: #c31306;
+    color: #ffffff;
+
+    padding: 10px 17px;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    text-decoration: none;
+}
+
+
+.boton-volver:hover {
+    background-color: #17365d;
+}
+
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.footer {
+    width: 100%;
+}
+
+
+/* PARTE PRINCIPAL */
+
+.footer-principal {
+    width: 100%;
+    height: 390px;
+
+    background-color: #eee9ce;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+/* TEXTO */
+
+.footer-texto {
+    position: absolute;
+
+    left: 65px;
+    top: 85px;
+
+    z-index: 5;
+}
+
+
+.footer-pregunta {
+    color: #17365d;
+
+    font-size: 27px;
+    font-weight: 700;
+
+    margin: 0 0 8px 0;
+}
+
+
+.footer-texto h2 {
+    color: #c31306;
+
+    font-size: 52px;
+    font-weight: 800;
+
+    margin: 0;
+}
+
+
+.footer-frase {
+    color: #17365d;
+
+    font-size: 20px;
+
+    margin-top: 12px;
+}
+
+
+/* PUENTE */
+
+.puente-footer {
+    position: absolute;
+
+    width: 620px;
+    height: auto;
+
+    right: 270px;
+    bottom: 0;
+
+    z-index: 1;
+}
+
+
+/* CASA */
+
+.casa-footer {
+    position: absolute;
+
+    width: 460px;
+    height: auto;
+
+    right: -20px;
+    bottom: -5px;
+
+    z-index: 2;
+}
+
+
+/* PARTE AZUL */
+
+.footer-abajo {
+    width: 100%;
+    height: 105px;
+
+    background-color: #17365d;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 55px;
+
+    position: relative;
+
+    z-index: 10;
+}
+
+
+/* LOGO */
+
+.footer-logo {
+    display: block;
+}
+
+
+.footer-logo img {
+    display: block;
+
+    width: 190px;
+    height: auto;
+
+    filter:
+        brightness(0)
+        saturate(100%)
+        invert(85%)
+        sepia(96%)
+        saturate(1500%)
+        hue-rotate(350deg)
+        brightness(105%);
+}
+
+
+/* REDES */
+
+.footer-redes {
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+}
+
+
+.footer-redes a {
+    color: #ffffff;
+
+    font-size: 14px;
+
+    letter-spacing: 2px;
+
+    text-decoration: none;
+
+    cursor: pointer;
+}
+
+
+.footer-redes a:hover {
+    color: #ffbe04;
+}
+
+
+/* LINEAS ENTRE REDES */
+
+.footer-redes span {
+    display: block;
+
+    width: 1px;
+    height: 30px;
+
+    background-color: #ffffff;
+
+    opacity: 0.7;
+}
+
+/* =========================================
+   PÁGINA PERSONAJES
+========================================= */
+
+
+/* PRESENTACIÓN */
+.personajes-presentacion {
+    width: 100%;
+    min-height: 215px;
+    background-color: #fbfce6;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 35px 55px;
+    gap: 70px;
+}
+
+.personajes-presentacion-texto {
+    width: 43%;
+}
+
+.personajes-presentacion-texto h1 {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 7px;
+}
+
+.personajes-presentacion-texto p {
+    font-size: 17px;
+    line-height: 1.15;
+    max-width: 410px;
+}
+
+
+/* FOTO GRANDE DEL HEADER */
+.personajes-presentacion-imagen {
+    width: 50%;
+    height: 120px;
+    overflow: hidden;
+}
+
+.personajes-presentacion-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 42%;
+    display: block;
+}
+
+
+/* =========================================
+   ZONA DE PERSONAJES
+========================================= */
+
+.seccion-personajes {
+    width: 100%;
+    background-color: #eee9ce;
+    padding: 30px 40px 45px;
+}
+
+
+/* FILTROS AMARILLOS */
+.filtros-personajes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+
+    margin-bottom: 25px;
+}
+
+.filtro {
+    min-width: 130px;
+    height: 42px;
+
+    border: none;
+    background-color: #f4d77d;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+
+    padding: 0 18px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.filtro:hover {
+    background-color: #ffbe04;
+}
+
+.filtro.activo-filtro {
+    background-color: #ffbe04;
+}
+
+
+/* =========================================
+   GRILLA
+========================================= */
+
+.grilla-personajes {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+
+    gap: 20px 10px;
+}
+
+
+/* =========================================
+   TARJETA
+========================================= */
+
+.personaje {
+    width: 100%;
+    height: 175px;
+
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.personaje-interior {
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+
+/* ESTA CLASE LA AGREGA JAVASCRIPT */
+.personaje.girada .personaje-interior {
+    transform: rotateY(180deg);
+}
+
+
+/* DOS LADOS */
+.personaje-frente,
+.personaje-atras {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    top: 0;
+    left: 0;
+
+    backface-visibility: hidden;
+}
+
+
+/* FRENTE */
+.personaje-frente {
+    background-color: #ffffff;
+    padding: 9px;
+}
+
+.personaje-frente img {
+    display: block;
+
+    width: 100%;
+    height: 125px;
+
+    object-fit: cover;
+    object-position: center 25%;
+}
+
+.personaje-frente h3 {
+    font-size: 13px;
+    font-weight: 800;
+
+    text-align: center;
+
+    margin-top: 8px;
+}
+
+
+/* PARTE DE ATRÁS */
+.personaje-atras {
+    background-color: #f4d77d;
+
+    transform: rotateY(180deg);
+
+    padding: 15px 12px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.personaje-atras h3 {
+    font-size: 14px;
+    font-weight: 800;
+
+    margin-bottom: 8px;
+}
+
+.personaje-atras p {
+    font-size: 11px;
+    line-height: 1.15;
+}
+
+
+/* =========================================
+   AJUSTES DE ENCUADRE
+   PARA QUE SE VEAN BIEN LAS CARAS
+========================================= */
+
+/* DJ */
+.personaje:nth-child(1) .personaje-frente img {
+    object-position: center 25%;
+}
+
+/* STEPHANIE */
+.personaje:nth-child(2) .personaje-frente img {
+    object-position: center 25%;
+}
+
+/* KIMMY */
+.personaje:nth-child(3) .personaje-frente img {
+    object-position: center 20%;
+}
+
+/* JACKSON */
+.personaje:nth-child(4) .personaje-frente img {
+    object-position: center 35%;
+}
+
+/* MAX */
+.personaje:nth-child(5) .personaje-frente img {
+    object-position: center 30%;
+}
+
+/* TOMMY */
+.personaje:nth-child(6) .personaje-frente img {
+    object-position: center center;
+}
+
+/* DANNY */
+.personaje:nth-child(7) .personaje-frente img {
+    object-position: center 20%;
+}
+
+/* JESSE */
+.personaje:nth-child(8) .personaje-frente img {
+    object-position: center 25%;
+}
+
+/* JOEY */
+.personaje:nth-child(9) .personaje-frente img {
+    object-position: center 20%;
+}
+
+/* STEVE */
+.personaje:nth-child(10) .personaje-frente img {
+    object-position: center 20%;
+}
+
+/* RAMONA */
+.personaje:nth-child(11) .personaje-frente img {
+    object-position: center 20%;
+}
+
+/* MATT */
+.personaje:nth-child(12) .personaje-frente img {
+    object-position: center 20%;
+}
+
+
+/* =========================================
+   ACCESOS DE ABAJO
+========================================= */
+
+.personajes-accesos {
+    background-color: #fbfce6;
+    padding-top: 55px;
+    padding-bottom: 35px;
+}
+
+/* =========================================
+   GENERAL
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+    background-color: #fbfce6;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.header {
+    width: 100%;
+    height: 45px;
+    background-color: #eee9ce;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 27px;
+}
+
+.marca {
+    width: 250px;
+    font-size: 15px;
+    font-weight: 900;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 29px;
+}
+
+.nav a {
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.nav .activo {
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.header-derecha {
+    margin-left: auto;
+
+    display: flex;
+    align-items: center;
+    gap: 17px;
+}
+
+.buscador {
+    width: 130px;
+    height: 31px;
+
+    background-color: #ffffff;
+
+    display: flex;
+    align-items: center;
+
+    gap: 6px;
+    padding: 0 8px;
+
+    font-size: 14px;
+}
+
+.inicio {
+    height: 30px;
+
+    background-color: #d1cfc5;
+
+    display: flex;
+    align-items: center;
+
+    gap: 4px;
+    padding: 0 8px;
+
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   HOME - PRIMER BLOQUE
+========================================= */
+
+.portada {
+    width: 100%;
+    min-height: 500px;
+
+    background-image: url("../imagenes/puente.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    padding: 50px 70px;
+}
+
+.portada-texto {
+    width: 560px;
+    padding: 0;
+
+    background: transparent;
+    text-align: center;
+}
+
+.bienvenidos {
+    font-size: 27px;
+    font-weight: 400;
+    color: #000000;
+
+    margin-bottom: 12px;
+}
+
+.logo-fuller {
+    display: block;
+
+    width: 430px;
+    max-width: 100%;
+    height: auto;
+
+    margin: 0 auto 24px auto;
+}
+
+.bajada {
+    display: inline-block;
+
+    font-size: 22px;
+    line-height: 1.25;
+
+    color: #111111;
+    background-color: rgba(255, 255, 255, 0.78);
+
+    padding: 12px 20px;
+
+    border-radius: 14px;
+
+    margin-bottom: 25px;
+}
+
+.boton {
+    display: inline-block;
+
+    background-color: #c31306;
+    color: #ffffff;
+
+    padding: 13px 20px;
+
+    font-size: 21px;
+    font-weight: 700;
+}
+
+
+/* =========================================
+   HOME - HISTORIA
+========================================= */
+
+.historia {
+    width: 100%;
+    min-height: 430px;
+
+    background-color: #fbfce6;
+
+    display: flex;
+    align-items: center;
+
+    padding: 40px 55px;
+
+    gap: 65px;
+}
+
+.historia-foto {
+    width: 52%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.marco-familia {
+    background-color: #ffbf08;
+
+    border-radius: 30px;
+
+    padding: 15px 15px 0 0;
+}
+
+.marco-familia img {
+    display: block;
+
+    width: 460px;
+    height: 305px;
+
+    object-fit: cover;
+
+    border-radius: 27px;
+}
+
+.historia-contenido {
+    width: 48%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.logo-full-house {
+    display: block;
+
+    width: 340px;
+    max-width: 100%;
+    height: auto;
+
+    margin-bottom: 20px;
+}
+
+.historia-contenido h2 {
+    font-size: 32px;
+    line-height: 1.05;
+    font-weight: 800;
+
+    margin-bottom: 19px;
+}
+
+.historia-contenido p {
+    max-width: 410px;
+
+    font-size: 23px;
+    line-height: 1.15;
+
+    margin-bottom: 24px;
+}
+
+.fecha {
+    background-color: #ffbe04;
+
+    min-width: 180px;
+
+    padding: 8px 25px;
+
+    border-radius: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    line-height: 1;
+}
+
+.fecha strong {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.fecha span {
+    font-size: 21px;
+}
+
+
+/* =========================================
+   HOME - DESCUBRÍ MÁS
+========================================= */
+
+.descubri {
+    width: 100%;
+
+    background-color: #ede8cc;
+
+    padding: 39px 39px 27px;
+}
+
+.descubri > h2 {
+    font-size: 33px;
+    line-height: 1.07;
+    font-weight: 800;
+
+    margin-bottom: 43px;
+}
+
+
+/* =========================================
+   HOME - TARJETAS
+========================================= */
+
+.cards {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 39px;
+}
+
+.card {
+    height: 186px;
+
+    background-color: #ffffeb;
+
+    position: relative;
+
+    padding: 10px 11px;
+}
+
+.card h3 {
+    font-size: 23px;
+    font-weight: 800;
+
+    margin-bottom: 7px;
+}
+
+.card p {
+    font-size: 16px;
+    line-height: 1.13;
+}
+
+.netflix-icono {
+    height: 62px;
+
+    font-family: Arial Black, Arial, sans-serif;
+
+    font-size: 52px;
+    font-weight: 900;
+
+    color: #d61212;
+}
+
+.personas-icono {
+    height: 62px;
+
+    display: flex;
+    align-items: center;
+
+    color: #349197;
+
+    font-size: 30px;
+    font-weight: 900;
+
+    letter-spacing: -5px;
+}
+
+.emoji {
+    height: 62px;
+
+    display: flex;
+    align-items: center;
+
+    font-size: 44px;
+}
+
+.flecha {
+    position: absolute;
+
+    right: 10px;
+    bottom: 8px;
+
+    font-size: 28px;
+
+    cursor: pointer;
+}
+
+
+/* =========================================
+   ACCESOS
+========================================= */
+
+.accesos {
+    width: 100%;
+
+    /* Un poco más oscuro que el footer */
+    background-color: #e5dfbd;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 81px;
+
+    padding: 30px 39px 25px;
+}
+
+.acceso {
+    display: block;
+    cursor: pointer;
+}
+
+.acceso img {
+    display: block;
+
+    width: 100%;
+    height: 149px;
+
+    object-fit: cover;
+}
+
+.acceso h3 {
+    font-size: 22px;
+    font-weight: 800;
+
+    margin-top: 7px;
+}
+
+
+/* =========================================
+   TEMPORADAS - PRESENTACIÓN
+========================================= */
+
+.temporadas-presentacion {
+    width: 100%;
+
+    min-height: 310px;
+
+    background-color: #fbfce6;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 35px 50px;
+
+    gap: 70px;
+}
+
+.temporadas-presentacion-texto {
+    width: 38%;
+}
+
+.temporadas-presentacion-texto h1 {
+    font-size: 31px;
+    line-height: 1.08;
+
+    font-weight: 800;
+
+    margin-bottom: 15px;
+}
+
+.temporadas-presentacion-texto p {
+    max-width: 340px;
+
+    font-size: 17px;
+    line-height: 1.15;
+}
+
+.temporadas-presentacion-imagen {
+    width: 52%;
+    height: 220px;
+
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.temporadas-presentacion-imagen img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    object-position: center;
+}
+
+
+/* =========================================
+   TEMPORADAS - TARJETAS
+========================================= */
+
+.temporadas-seccion {
+    width: 100%;
+
+    background-color: #eee9ce;
+
+    padding: 28px 20px 42px;
+}
+
+.temporadas-grilla {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 24px;
+}
+
+.temporada-card {
+    min-height: 355px;
+
+    background-color: #fffff4;
+
+    padding: 18px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.temporada-imagen {
+    width: 100%;
+    height: 155px;
+
+    overflow: hidden;
+
+    margin-bottom: 13px;
+
+    background-color: #ffffff;
+}
+
+.temporada-imagen img {
+    width: 100%;
+    height: 100%;
+
+    /*
+       La imagen llena todo el espacio.
+       No quedan bordes blancos alrededor.
+    */
+    object-fit: cover;
+
+    /*
+       Priorizamos la parte superior para
+       que se vean mejor las caras.
+    */
+    object-position: center 25%;
+
+    display: block;
+}
+
+/*
+   La temporada 3 tiene una imagen más vertical.
+   La dejamos centrada para evitar un recorte raro.
+*/
+.temporada-card:nth-child(3) .temporada-imagen img {
+    object-position: center 20%;
+}
+
+.temporada-card h2 {
+    font-size: 21px;
+    font-weight: 800;
+
+    margin-bottom: 8px;
+}
+
+.linea-temporada {
+    width: 100%;
+    height: 1px;
+
+    background-color: #777777;
+
+    margin-bottom: 13px;
+}
+
+.temporada-card p {
+    font-size: 16px;
+    line-height: 1.15;
+
+    margin-bottom: 12px;
+}
+
+.temporada-card span {
+    font-size: 15px;
+
+    color: #777777;
+
+    margin-top: auto;
+}
+
+
+/* =========================================
+   CAPÍTULOS DESTACADOS
+========================================= */
+
+.capitulos-destacados {
+    width: 100%;
+
+    background-color: #fbfce6;
+
+    padding: 40px 58px 48px;
+}
+
+.capitulos-destacados > h2 {
+    display: inline-block;
+
+    background-color: #eee9ce;
+
+    font-size: 27px;
+    font-weight: 800;
+
+    padding: 12px 22px;
+
+    margin-bottom: 30px;
+}
+
+.capitulos-grilla {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 100px;
+}
+
+.capitulo-destacado {
+    width: 100%;
+}
+
+.capitulo-imagen {
+    width: 100%;
+    height: 275px;
+
+    overflow: hidden;
+
+    background-color: #ffffff;
+}
+
+.capitulo-imagen img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    /*
+       Las personas quedan hacia la izquierda,
+       como en tu boceto.
+    */
+    object-position: left center;
+
+    display: block;
+}
+
+.capitulo-destacado h3 {
+    font-size: 27px;
+    font-weight: 800;
+
+    margin-top: 12px;
+    margin-bottom: 8px;
+}
+
+.capitulo-destacado p {
+    font-size: 22px;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.footer {
+    width: 100%;
+}
+
+.footer-principal {
+    width: 100%;
+    height: 390px;
+
+    /* Este queda más claro que accesos */
+    background-color: #eee9ce;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.footer-texto {
+    position: absolute;
+
+    left: 65px;
+    top: 85px;
+
+    z-index: 5;
+}
+
+.footer-pregunta {
+    color: #17365d;
+
+    font-size: 27px;
+    font-weight: 700;
+
+    margin: 0 0 8px 0;
+}
+
+.footer-texto h2 {
+    color: #c31306;
+
+    font-size: 52px;
+    font-weight: 800;
+
+    margin: 0;
+}
+
+.footer-frase {
+    color: #17365d;
+
+    font-size: 20px;
+
+    margin-top: 12px;
+}
+
+.puente-footer {
+    position: absolute;
+
+    width: 620px;
+    height: auto;
+
+    right: 270px;
+    bottom: 0;
+
+    z-index: 1;
+}
+
+.casa-footer {
+    position: absolute;
+
+    width: 460px;
+    height: auto;
+
+    right: -20px;
+    bottom: -5px;
+
+    z-index: 2;
+}
+
+.footer-abajo {
+    width: 100%;
+    height: 105px;
+
+    background-color: #17365d;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 55px;
+
+    position: relative;
+
+    z-index: 10;
+}
+
+.footer-logo {
+    display: block;
+}
+
+.footer-logo img {
+    display: block;
+
+    width: 190px;
+    height: auto;
+
+    filter:
+        brightness(0)
+        saturate(100%)
+        invert(85%)
+        sepia(96%)
+        saturate(1500%)
+        hue-rotate(350deg)
+        brightness(105%);
+}
+
+.footer-redes {
+    display: flex;
+    align-items: center;
+
+    gap: 25px;
+}
+
+.footer-redes a {
+    color: #ffffff;
+
+    font-size: 14px;
+
+    letter-spacing: 2px;
+
+    text-decoration: none;
+
+    cursor: pointer;
+}
+
+.footer-redes a:hover {
+    color: #ffbe04;
+}
+
+.footer-redes span {
+    display: block;
+
+    width: 1px;
+    height: 30px;
+
+    background-color: #ffffff;
+
+    opacity: 0.7;
+}
+
+/* =========================================
+   LA CASA
+========================================= */
+
+
+/* =========================================
+   PRESENTACIÓN
+========================================= */
+
+.casa-presentacion {
+    width: 100%;
+    min-height: 210px;
+
+    background-color: #fbfce6;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 25px 70px;
+    gap: 60px;
+}
+
+
+.casa-presentacion-texto {
+    width: 38%;
+}
+
+
+.casa-presentacion-texto h1 {
+    font-size: 31px;
+    font-weight: 800;
+
+    margin-bottom: 12px;
+}
+
+
+.casa-presentacion-texto p {
+    font-size: 17px;
+    line-height: 1.3;
+
+    max-width: 330px;
+}
+
+
+/* FOTO DEL HEADER */
+
+.casa-presentacion-imagen {
+    width: 52%;
+    height: 160px;
+
+    overflow: hidden;
+}
+
+
+.casa-presentacion-imagen img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+
+
+/* =========================================
+   RECORRIDO POR LA CASA
+========================================= */
+
+.recorrido-casa {
+    width: 100%;
+
+    background-color: #eee9ce;
+
+    padding: 38px 48px 45px;
+}
+
+
+.recorrido-titulo h2 {
+    font-size: 30px;
+    font-weight: 800;
+
+    margin-bottom: 7px;
+}
+
+
+.recorrido-titulo p {
+    font-size: 16px;
+}
+
+
+
+/* =========================================
+   CONTENIDO DEL RECORRIDO
+========================================= */
+
+.recorrido-contenido {
+    margin-top: 30px;
+
+    display: grid;
+
+    grid-template-columns: 180px 430px 280px;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 35px;
+}
+
+
+
+/* =========================================
+   BOTONES
+========================================= */
+
+.botones-casa {
+    display: flex;
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+
+.boton-casa {
+    width: 180px;
+    height: 75px;
+
+    border: none;
+
+    background-color: #fff8d7;
+
+    color: #000000;
+
+    font-size: 15px;
+    font-weight: 800;
+
+    cursor: pointer;
+
+    padding: 8px 10px;
+}
+
+
+.boton-casa:hover {
+    background-color: #ffdc69;
+}
+
+
+.boton-casa.activo-casa {
+    background-color: #ffbe04;
+}
+
+
+
+/* =========================================
+   CARRUSEL
+========================================= */
+
+.carrusel-casa {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* FOTO MÁS CUADRADA */
+
+.imagen-casa-contenedor {
+    width: 430px;
+    height: 380px;
+
+    background-color: #ffffff;
+
+    overflow: hidden;
+}
+
+
+.imagen-casa-contenedor img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+
+
+/* =========================================
+   FLECHAS
+========================================= */
+
+.flecha-casa {
+    position: absolute;
+
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 40px;
+    height: 40px;
+
+    border: none;
+    border-radius: 50%;
+
+    background-color: rgba(255, 255, 255, 0.9);
+
+    font-size: 24px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    z-index: 5;
+}
+
+
+.flecha-izquierda {
+    left: 10px;
+}
+
+
+.flecha-derecha {
+    right: 10px;
+}
+
+
+.flecha-casa:hover {
+    background-color: #ffbe04;
+}
+
+
+
+/* =========================================
+   MOMENTOS DESTACADOS
+========================================= */
+
+.momentos-casa {
+    align-self: center;
+}
+
+
+.momentos-casa > h2 {
+    font-size: 26px;
+    line-height: 1;
+
+    font-weight: 800;
+
+    margin-bottom: 17px;
+}
+
+
+#textoMomentos {
+    width: 100%;
+    min-height: 250px;
+
+    background-color: #ffffeb;
+
+    padding: 22px;
+}
+
+
+#textoMomentos h3 {
+    font-size: 16px;
+    font-weight: 800;
+
+    margin-bottom: 6px;
+}
+
+
+#textoMomentos p {
+    font-size: 14px;
+    line-height: 1.25;
+
+    margin-bottom: 19px;
+}
+
+
+#textoMomentos p:last-child {
+    margin-bottom: 0;
+}
+
+
+
+/* =========================================
+   VIAJEMOS EN EL TIEMPO
+========================================= */
+
+.viajemos-tiempo {
+    width: 100%;
+
+    background-color: #fbfce6;
+
+    padding: 38px 48px 43px;
+}
+
+
+.viajemos-tiempo > h2 {
+    font-size: 30px;
+    font-weight: 800;
+
+    margin-bottom: 4px;
+}
+
+
+.viajemos-tiempo > p {
+    font-size: 16px;
+
+    margin-bottom: 27px;
+}
+
+
+
+/* =========================================
+   IMÁGENES FULL HOUSE
+========================================= */
+
+.tiempo-grilla {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 35px;
+}
+
+
+.tiempo-item {
+    min-width: 0;
+}
+
+
+.tiempo-item img {
+    display: block;
+
+    width: 100%;
+    height: 170px;
+
+    object-fit: cover;
+}
+
+
+/* ACOMODO DE CADA FOTO PARA
+   PRIORIZAR QUE SE VEAN LAS CARAS */
+
+.fullhouse-1 {
+    object-position: center 38%;
+}
+
+
+.fullhouse-2 {
+    object-position: center 35%;
+}
+
+
+.fullhouse-3 {
+    object-position: center 32%;
+}
+
+
+.fullhouse-4 {
+    object-position: center 40%;
+}
+
+
+.fullhouse-5 {
+    object-position: center 35%;
+}
+
+
+.tiempo-item h3 {
+    font-size: 16px;
+    font-weight: 800;
+
+    margin-top: 8px;
+}
+
+
+
+/* =========================================
+   ACCESOS
+========================================= */
+
+.casa-accesos {
+    background-color: #e5dfbd;
+}
+
+
+.casa-accesos .acceso img {
+    display: block;
+
+    width: 100%;
+    height: 149px;
+
+    object-fit: cover;
+}
+
+
+.casa-accesos .acceso h3 {
+    font-size: 22px;
+    font-weight: 800;
+
+    margin-top: 7px;
+}
+
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1100px) {
+
+    .recorrido-contenido {
+        grid-template-columns: 160px 380px 250px;
+
+        gap: 25px;
+    }
+
+
+    .boton-casa {
+        width: 160px;
+    }
+
+
+    .imagen-casa-contenedor {
+        width: 380px;
+        height: 350px;
+    }
+
+}
+
+
+@media (max-width: 850px) {
+
+    .casa-presentacion {
+        flex-direction: column;
+
+        padding: 35px;
+    }
+
+
+    .casa-presentacion-texto,
+    .casa-presentacion-imagen {
+        width: 100%;
+    }
+
+
+    .recorrido-contenido {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .botones-casa {
+        width: 100%;
+
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+
+    .boton-casa {
+        width: auto;
+
+        padding: 12px 18px;
+    }
+
+
+    .imagen-casa-contenedor {
+        width: 430px;
+        max-width: 90vw;
+
+        height: 380px;
+    }
+
+
+    .momentos-casa {
+        width: 100%;
+        max-width: 430px;
+    }
+
+
+    .tiempo-grilla {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+/* =========================================
+   INICIO DE SESIÓN
+========================================= */
+
+
+/* =========================================
+   PÁGINA
+========================================= */
+
+.pagina-sesion {
+    width: 100%;
+
+    background-color: #fbfce6;
+
+    padding: 65px 45px 55px;
+}
+
+
+.sesion-contenido {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 50px;
+
+    align-items: stretch;
+}
+
+
+
+/* =========================================
+   GALERÍA
+========================================= */
+
+.sesion-galeria {
+    background-color: #eee9ce;
+
+    padding: 40px;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    grid-template-rows: repeat(4, 145px);
+
+    gap: 35px 40px;
+}
+
+
+
+/* =========================================
+   RECUADROS DE LAS FOTOS
+========================================= */
+
+.sesion-foto {
+    width: 100%;
+    height: 145px;
+
+    overflow: hidden;
+
+    background-color: #eee9ce;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.sesion-foto img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* =========================================
+   FOTO 1
+   HORIZONTAL
+========================================= */
+
+.sesion-img-1 {
+    object-fit: contain;
+
+    object-position: center;
+}
+
+
+
+/* =========================================
+   FOTO 2
+   VERTICAL / CUADRADA
+========================================= */
+
+.sesion-img-2 {
+    object-fit: contain;
+
+    object-position: center;
+}
+
+
+
+/* =========================================
+   FOTO 3
+   HORIZONTAL
+========================================= */
+
+.sesion-img-3 {
+    object-fit: contain;
+
+    object-position: center;
+}
+
+
+
+/* =========================================
+   FOTO 4
+   CUADRADA
+========================================= */
+
+.sesion-img-4 {
+    object-fit: contain;
+
+    object-position: center;
+}
+
+
+
+/* =========================================
+   FOTO 5
+   VERTICAL
+========================================= */
+
+.sesion-img-5 {
+    object-fit: contain;
+
+    object-position: center;
+}
+
+
+
+/* =========================================
+   FOTO 6
+   CUADRADA
+========================================= */
+
+.sesion-img-6 {
+    object-fit: contain;
+
+    object-position: center;
+}
+
+
+
+/* =========================================
+   FOTO 7
+   HORIZONTAL
+========================================= */
+
+.sesion-img-7 {
+    object-fit: contain;
+
+    object-position: center;
+}
+
+
+
+/* =========================================
+   FOTO 8
+   CUADRADA
+========================================= */
+
+.sesion-img-8 {
+    object-fit: contain;
+
+    object-position: center;
+}
+
+
+
+/* =========================================
+   FORMULARIO
+========================================= */
+
+.sesion-formulario {
+    background-color: #eee9ce;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 50px 45px;
+}
+
+
+.sesion-formulario-contenido {
+    width: 100%;
+
+    max-width: 460px;
+}
+
+
+
+/* =========================================
+   TÍTULO
+========================================= */
+
+.sesion-formulario h1 {
+    font-size: 45px;
+
+    line-height: 1;
+
+    font-weight: 800;
+
+    margin-bottom: 24px;
+}
+
+
+.sesion-introduccion {
+    max-width: 300px;
+
+    font-size: 16px;
+
+    line-height: 1.25;
+
+    margin-bottom: 43px;
+}
+
+
+
+/* =========================================
+   CAMPOS
+========================================= */
+
+.campo-sesion {
+    width: 100%;
+
+    margin-bottom: 32px;
+}
+
+
+.campo-sesion label {
+    display: block;
+
+    font-size: 23px;
+
+    font-weight: 800;
+
+    margin-bottom: 9px;
+}
+
+
+.campo-sesion input {
+    width: 100%;
+
+    height: 58px;
+
+    border: none;
+
+    outline: none;
+
+    background-color: #ffffff;
+
+    color: #000000;
+
+    padding: 0 16px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 15px;
+}
+
+
+.campo-sesion input::placeholder {
+    color: #333333;
+}
+
+
+
+/* =========================================
+   CONTRASEÑA
+========================================= */
+
+.contrasena-contenedor {
+    width: 100%;
+
+    position: relative;
+}
+
+
+.contrasena-contenedor input {
+    padding-right: 55px;
+}
+
+
+.ojo-contrasena {
+    position: absolute;
+
+    right: 18px;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    font-size: 18px;
+
+    cursor: pointer;
+}
+
+
+
+/* =========================================
+   RECORDARME / CONTRASEÑA
+========================================= */
+
+.opciones-sesion {
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-top: -19px;
+
+    margin-bottom: 65px;
+}
+
+
+.recordarme {
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+
+    font-size: 12px;
+
+    cursor: pointer;
+}
+
+
+.recordarme input {
+    width: 18px;
+
+    height: 18px;
+
+    cursor: pointer;
+}
+
+
+.olvide-contrasena {
+    font-size: 12px;
+
+    font-weight: 700;
+
+    text-decoration: underline;
+}
+
+
+
+/* =========================================
+   BOTÓN
+========================================= */
+
+.boton-iniciar-sesion {
+    width: 100%;
+
+    height: 58px;
+
+    border: none;
+
+    background-color: #c31306;
+
+    color: #ffffff;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 20px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+
+.boton-iniciar-sesion:hover {
+    background-color: #a90f05;
+}
+
+
+
+/* =========================================
+   REGISTRO
+========================================= */
+
+.registro-sesion {
+    width: 100%;
+
+    border-top: 1px solid #c7c0a3;
+
+    margin-top: 28px;
+
+    padding-top: 18px;
+
+    text-align: center;
+}
+
+
+.registro-sesion p {
+    font-size: 14px;
+
+    margin-bottom: 6px;
+}
+
+
+.registro-sesion a {
+    font-size: 17px;
+
+    font-weight: 800;
+
+    text-decoration: underline;
+}
+
+
+
+/* =========================================
+   HEADER ACTIVO
+========================================= */
+
+.activo-sesion {
+    font-weight: 700;
+}
+
+
+
+/* =========================================
+   ACCESOS
+========================================= */
+
+.sesion-accesos {
+    background-color: #e4dec1;
+}
+
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+    .sesion-contenido {
+        grid-template-columns: 1fr;
+    }
+
+
+    .sesion-formulario {
+        order: 1;
+    }
+
+
+    .sesion-galeria {
+        order: 2;
+    }
+
+}
+
+
+
+@media (max-width: 550px) {
+
+    .pagina-sesion {
+        padding: 35px 20px;
+    }
+
+
+    .sesion-galeria {
+        padding: 25px;
+
+        grid-template-columns: repeat(2, 1fr);
+
+        grid-template-rows: repeat(4, 120px);
+
+        gap: 20px;
+    }
+
+
+    .sesion-foto {
+        height: 120px;
+    }
+
+
+    .sesion-formulario {
+        padding: 35px 25px;
+    }
+
+
+    .sesion-formulario h1 {
+        font-size: 36px;
+    }
+
+
+    .opciones-sesion {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 12px;
+
+        margin-bottom: 40px;
+    }
+
+}
